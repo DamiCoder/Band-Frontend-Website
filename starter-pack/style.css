@@ -258,14 +258,42 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     border-top: 3px solid #EF008E;
 }
 
-.about-section {}
+.about-section#about {
+    position: relative;
+}
 
 .about-section__desc {
-    background-color: rgba(37,7,46,.5);
+    background-color: rgba(37,7,46,1);
     width: 400px;
     height: 400px;
-    border: 3px solid #EF008E;
-    z-index: 10;
+    border-bottom: 3px solid #EF008E;
+    position: absolute;
+    top: 400px;
+    left : 160px;
+}
+
+.about-section__desc-header {
+    font-family: "Open Sans Bold";
+    color: #CCC8FF;
+    font-size: 15px;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.about-section__desc-details {
+    color: #CCC8FF;
+    opacity: 80%;
+    font-family: "Open Sans";
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
 }
 
 
