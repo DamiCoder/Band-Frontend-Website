@@ -89,7 +89,7 @@ Sekcja pomocnicza, aby zwizualizować pozycje głównych bloków strony. Będzie
 */
 
 .page-content {
-    margin-left: 220px;
+    margin: 0 0 0 220px;
     padding: 0 10%;
     text-align: right;
 }
@@ -186,8 +186,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .social-links a:link {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     color: #EF008E;
     text-align: left;
     letter-spacing: 6.7px;
@@ -227,7 +226,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     font-size: 28px;
     letter-spacing: 4.5px;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    padding: 0 0 50px;
 
 }
 
@@ -256,9 +255,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     font-size: 15px;
     letter-spacing: 3.8px;
     text-transform: uppercase;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0 40px 40px;
     text-align: left;
 }
 
@@ -268,9 +265,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     font-family: "Open Sans";
     font-size: 13px;
     letter-spacing: 1.5px;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px 50px;
     text-align: left;
 }
 
@@ -280,12 +275,12 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .concerts {
-    margin-right: 220px;
+    margin: 0 220px 0 0;
     display: grid;
     grid-template: repeat(2, 200px) / repeat(2, 200px);
     column-gap: 250px;
     row-gap: 150px;
-    float: right;
+    justify-content: right;
 }
 
 .concerts img {
@@ -308,7 +303,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     color: #CCC8FF;
     font-size: 15px;
     letter-spacing: 3.8px;
-    padding-top: 15px;
+    padding: 15px 0 0;
     text-transform: uppercase;
     text-align: left;
     margin: 0;
@@ -342,7 +337,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 
 
 .content-section#video {
-    margin-top: 100px;
+    margin: 100px 0 0;
 }
 
 .content-section#video iframe {
@@ -351,11 +346,11 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .gallery {
-    float: right;
     display: grid;
     grid-template: repeat(3, 195px) / repeat(3, 261px);
     row-gap: 20px;
     column-gap: 20px;
+    justify-content: right;
 }
 
 .content-section#photos img {
@@ -366,7 +361,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .content-section#contact {
-    margin-left: 300px;
+    margin: 0 0 0 300px;
     position: relative;
 }
 
@@ -377,8 +372,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .content-section#contact address {
-    margin-left: 550px;
-    margin-top: 140px;
+    margin: 140px 0 0 550px;
     position: absolute;
     text-align: left;
     color: #CCC8FF;
@@ -390,7 +384,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .form {
-    margin-top: 350px;
+    margin: 350px 0 0 0;
     position: absolute;
     float: left;
 }
@@ -401,8 +395,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
 }
 
 .form__field label {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     display: block;
     text-align: left;
     color: #CCC8FF;
@@ -429,7 +422,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     left: 0;
     width: 140px;
     height: 30px;
-    margin-top: 15px;
+    margin: 15px 0 0 0;
     text-align: center;
     padding: 0;
 }
