@@ -1,13 +1,17 @@
+//ZAD. 2
+const buttons = document.querySelectorAll(".concerts__item .button");
+for(let button of buttons) {
+    onBuyTicketButtonClick(button)
+}
 
-
-
-
-
-
-
-
-
-
+function onBuyTicketButtonClick(button){
+    button.addEventListener('click', event => {
+        let replacementString = document.createElement('p');
+        replacementString.innerText = "Have fun!";
+        replacementString.style.cssText='color: #CCC8FF;opacity:50%;font-family:"Open Sans",sans-serif;font-size:13px;letter-spacing:3.5px;text-align:right;margin:0;';
+        button.replaceWith(replacementString);
+    });
+}
 
 //ZAD. 3
 const myButton = document.querySelector('#formSubmitButton');
