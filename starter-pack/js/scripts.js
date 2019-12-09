@@ -1,3 +1,13 @@
+//ZAD. 1
+function showOrHideMenu() {
+    let x = document.querySelector("#menuItems");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 //ZAD. 2
 const buttons = document.querySelectorAll(".concerts__item .button");
 for(let button of buttons) {

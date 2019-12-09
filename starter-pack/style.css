@@ -163,6 +163,7 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     top: 50px;
     left: 50px;
 }
+
 .page-navigation a:link, a:visited, a:hover, a:active {
     color: #EF008E;
     text-align: left;
@@ -179,6 +180,11 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.page-navigation #hamburgerMenu img {
+    display: none;
+}
+
 
 
 /*FOOTER SECTION*/
@@ -515,6 +521,35 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
         text-align: left;
         padding: 2px 0 2px 0;
         display: inline-block;
+    }
+
+    .page-navigation {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .page-navigation#hamburgerMenu  {
+        display: block;
+        left: 0;
+        position: sticky;
+    }
+
+    .page-navigation #hamburgerMenu img {
+        display: block;
+    }
+
+    .page-navigation img  {
+        margin: 0;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .page-brand img {
+        margin: 0;
+    }
+
+    .page-navigation__items#menuItems {
+        display: none;
     }
 
 
