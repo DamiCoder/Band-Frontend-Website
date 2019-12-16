@@ -1,14 +1,16 @@
 //ZAD. 1
 function showOrHideMenu() {
-    let menuItems = document.querySelector("#menuItems");
-    if (menuItems.style.display === "block") {
-        menuItems.style.display = "none";
+    let image = document.querySelector("#hamburgerMenuImage");
+    var menuItems = $('#menuItems');
+
+    if ($(menuItems).is(':visible')) {
+        image.src = "images/bars-solid-font-awesome.svg";
     } else {
-        menuItems.style.display = "block";
+        image.src = "images/times-circle-regular-font-awesome.svg";
     }
+    $(menuItems).slideToggle(400);
 }
 
-//ZAD. 2
 const buttons = document.querySelectorAll(".concerts__item .button");
 for(let button of buttons) {
     onBuyTicketButtonClick(button)
@@ -23,8 +25,7 @@ function onBuyTicketButtonClick(button){
     });
 }
 
-//ZAD. 3
-const contactForm = document.querySelector('.contact__form');
+const contactForm = document.querySelector('.form');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);

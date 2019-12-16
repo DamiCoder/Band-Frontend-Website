@@ -523,6 +523,10 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
         display: inline-block;
     }
 
+    .page-navigation .icon {
+        width: 50px;
+    }
+
     .page-navigation {
         overflow: hidden;
         position: relative;
@@ -548,9 +552,9 @@ która wymusza wysokość elementu na zadaną wartość lub wyższą.
         margin: 0;
     }
 
-    .page-navigation__items#menuItems {
-        display: none;
-    }
+    /*.page-navigation__items#menuItems {*/
+    /*    display: none;*/
+    /*}*/
 
 
 
